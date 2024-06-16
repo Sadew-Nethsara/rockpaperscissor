@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rock-Paper-Scissors</title>
+
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+      <div id="game">
+
+            <header>
+                  <h1 id="title">R✊<br>P🤚<br>S✌️</h1>
+                  <h1 id="score">00</h1>
+                  <span id="scoreText">Score</span>
+            </header>
+
+            <h1 id="status">Hello👋</h1>
+            <button id="restart2" onclick="restart()">Restart</button>
+
+
+            <center>
+                  <div id="hands">
+                        <img src="images/2.png" id="userHand" class="handsImg">
+                        <img src="images/2f.png" id="pcHand" class="handsImg">
+                  </div>
+            </center>
+
+            <button id="restart" onclick="restart()">Restart</button>
+
+            <div id="options">
+                  <img src="images/2.png" id="rock" onclick="rock()" class="optionsImgs">
+                  <img src="images/1.png" id="scissor" onclick="scissor()" class="optionsImgs">
+                  <img src="images/0.png" id="paper" onclick="paper()" class="optionsImgs">
+            </div>
+
+            <audio id="music" autoplay loop src="sounds/music.mp3"></audio>
+            <audio id="pop" src="sounds/pop.mp3"></audio>
+
+            <div id="themeChange">
+                  <h1 id="themeChangeH1">Themes</h1>
+                  <button class="themeChangeButtons" id="fTCB" onclick="theme1()">Happy Jungle</button>
+                  <button class="themeChangeButtons" onclick="theme2()">Lava Island</button>
+                  <button class="themeChangeButtons" onclick="theme3()">Magical Tree</button>
+                  <button class="themeChangeButtons" onclick="theme4()">Star Tree</button>
+                  <button class="themeChangeButtons" onclick="theme5()">Floating Island</button>
+                  <button class="themeChangeButtons" id="lTCB" onclick="theme6()">Infinity Rock</button>
+                  <button class="themeChangeButtons" id="next" onclick="next()">Next</button>
+            </div>
+
+            <div id="instructions">
+                  <h1 id="instructionsH1">Instructions</h1>
+
+                  <table>
+                        <tr>
+                              <td class="tdS">Theme</td>
+                              <td class="key">T</td>
+                        </tr>
+                        <tr>
+                              <td class="tdS">Rock</td>
+                              <td class="key">R</td>
+                        </tr>
+                        <tr>
+                              <td class="tdS">Scissor</td>
+                              <td class="key">S/C</td>
+                        </tr>
+                        <tr>
+                              <td class="tdS">Paper</td>
+                              <td class="key">P</td>
+                        </tr>
+                        <tr>
+                              <td class="tdS">Restart</td>
+                              <td class="key">Delete</td>
+                        </tr>
+                        <tr>
+                              <td class="tdS">Mute</td>
+                              <td class="key">M</td>
+                        </tr>
+                        <tr>
+                              <td class="tdS">Instructions</td>
+                              <td class="key">I/H</td>
+                        </tr>
+                  </table>
+
+                  <button id="close" onclick="closeIns()">Close</button>
+            </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+
+</html>

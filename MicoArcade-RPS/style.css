@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+* {
+      font-family: 'Poppins', sans-serif;
+      user-select: none;
+}
+
+body {
+      background-image: url('images/bg1.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+}
+
+
+@keyframes right {
+      30%{
+            left: 50%;
+      }
+      60%{
+            left: 50%;
+      }
+}
+
+header {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      top: 0;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.533);
+      backdrop-filter: blur(10px);
+}
+
+#title {
+      font-size: 28px;
+      margin-right: 50%;
+      line-height: 32px;
+      font-weight: 900;
+}
+
+#score {
+      top: 0;
+      margin-bottom: -10px;
+      text-align: center;
+      font-size: 65px;
+      text-align: center;
+      top: -30px;
+      display: inline;
+      position: absolute;
+      margin-left: 50%;
+      font-weight: 600;
+}
+
+#scoreText {
+      text-align: center;
+      margin: 0;
+      font-size: 17px;
+      text-align: center;
+      top: 93px;
+      display: inline;
+      position: absolute;
+      margin-left: 50%;
+      font-weight: 500;
+}
+
+#status {
+      margin: 20px;
+      color: #000000;
+      background: rgba(255, 255, 255, 0.533);
+      backdrop-filter: blur(10px);
+      width: fit-content;
+      padding: 10px;
+      border-radius: 20px;
+}
+
+.optionsImgs {
+      width: 100px;
+      margin: 0;
+      border-radius: 50%;
+      box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+      transition: .5s;
+
+}
+
+.optionsImgs:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.267);
+      transform: rotate(-40deg);
+}
+
+#options {
+      background: rgba(255, 255, 255, 0.533);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      width: fit-content;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 10px;
+      bottom: 0;
+      position: fixed;
+}
+
+#restart {
+      padding: 10px 30px;
+      position: absolute;
+      display: block;
+      right: 0;
+      margin: 20px;
+      bottom: 0;
+      font-size: 20px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+      background: rgba(255, 255, 255, 0.533);
+      backdrop-filter: blur(10px);
+      font-weight: 600;
+      transition: .5s;
+}
+
+#restart:hover {
+      background: rgb(236, 236, 236);
+}
+
+@keyframes shake {
+      0% {
+            transform: rotate(-30deg);
+      }
+
+
+
+      50% {
+            transform: rotate(30deg);
+      }
+}
+
+.handsImg {
+      width: 200px;
+      margin: 0;
+      border-radius: 50%;
+      box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+      transition: .5s;
+      transform: rotate(-30deg);
+      animation: shake .5s infinite;
+}
+
+#hands {
+      background: rgba(255, 255, 255, 0.533);
+      backdrop-filter: blur(10px);
+      width: fit-content;
+      padding: 20px;
+      border-radius: 30px;
+}
+
+#restart2 {
+      display: none;
+}
+
+
+@media (max-width:500px) {
+      #restart2 {
+            padding: 10px 20px;
+            font-size: 30px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.533);
+            backdrop-filter: blur(10px);
+            font-weight: 600;
+            transition: .5s;
+            margin-bottom: 10px;
+            display: inline;
+      }
+
+      #restart {
+            display: none;
+      }
+
+      #status {
+            display: inline;
+            margin-bottom: 10px;
+            backdrop-filter: blur(10px);
+      }
+}
+
+#instructions {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.533);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      padding-top: 10px;
+      border-radius: 20px;
+      display: none;
+}
+
+.key {
+      border: #000000 1px solid;
+      padding: 7px;
+      border-radius: 7px;
+      width: fit-content;
+}
+
+.tdS {
+      padding: 10px;
+}
+
+#close {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 0px;
+      background: #006eff;
+      transition: .25s;
+}
+
+#close:hover {
+      background: #014aaa;
+}
+
+
+
+#themeChange {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.533);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      padding-top: 10px;
+      border-radius: 30px;
+      width: 250px;
+}
+
+.themeChangeButtons {
+      width: 100%;
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+      border: none;
+      border-radius: 0px;
+      padding: 10px 0px;
+      transition: .25s;
+      cursor: pointer;
+      margin-top: 2px;
+}
+
+#fTCB{
+      border-radius: 20px 20px 0 0;
+}
+#lTCB{
+      border-radius: 0 0 20px 20px ;
+}
+
+.themeChangeButtons:nth-child(odd) {background-color: #ff0037;}
+.themeChangeButtons:nth-child(even) {background-color: #47000f;}
+
+#next{
+      background: #006eff;
+      border-radius: 60px;
+      margin-top: 20px;
+}
