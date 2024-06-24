@@ -74,13 +74,16 @@ function rock() {
             document.getElementById('score').innerHTML = parseInt(document.getElementById('score').innerHTML) - 1;
             document.getElementById('status').innerHTML = 'out 🤭';
             document.getElementById('pcHand').src = 'images/0f.png'
+            navigator.vibrate(500);
       } else if (random == 1) {
             document.getElementById('score').innerHTML = parseInt(document.getElementById('score').innerHTML) + 1;
             document.getElementById('status').innerHTML = 'won 🫣';
             document.getElementById('pcHand').src = 'images/1f.png'
+            navigator.vibrate(100);
       } else if (random == 2) {
             document.getElementById('status').innerHTML = 'draw 🤝';
             document.getElementById('pcHand').src = 'images/2f.png'
+            navigator.vibrate(70);
       } else {
             alert('nothing happend')
             document.getElementById('status').innerHTML = 'nothing happend 😇';
@@ -100,13 +103,16 @@ function scissor() {
             document.getElementById('score').innerHTML = parseInt(document.getElementById('score').innerHTML) - 1;
             document.getElementById('status').innerHTML = 'out 🤭';
             document.getElementById('pcHand').src = 'images/2f.png'
+            navigator.vibrate(500);
       } else if (random == 0) {
             document.getElementById('score').innerHTML = parseInt(document.getElementById('score').innerHTML) + 1;
             document.getElementById('status').innerHTML = 'won 🫣';
             document.getElementById('pcHand').src = 'images/0f.png'
+            navigator.vibrate(100);
       } else if (random == 1) {
             document.getElementById('status').innerHTML = 'draw 🤝';
             document.getElementById('pcHand').src = 'images/1f.png'
+            navigator.vibrate(70);
       } else {
             document.getElementById('status').innerHTML = 'nothing happend 😇';
       }
@@ -125,13 +131,16 @@ function paper() {
             document.getElementById('score').innerHTML = parseInt(document.getElementById('score').innerHTML) - 1;
             document.getElementById('status').innerHTML = 'out 🤭';
             document.getElementById('pcHand').src = 'images/1f.png'
+            navigator.vibrate(500);
       } else if (random == 2) {
             document.getElementById('score').innerHTML = parseInt(document.getElementById('score').innerHTML) + 1;
             document.getElementById('status').innerHTML = 'won 🫣';
             document.getElementById('pcHand').src = 'images/2f.png'
+            navigator.vibrate(100);
       } else if (random == 0) {
             document.getElementById('status').innerHTML = 'draw 🤝';
             document.getElementById('pcHand').src = 'images/0f.png'
+            navigator.vibrate(70);
       } else {
             document.getElementById('status').innerHTML = 'nothing happend 😇';
       }
